@@ -1,0 +1,121 @@
+/*IMPORTANT*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'), url(https://example.com/MaterialIcons-Regular.woff) format('woff'), url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+* {
+    font-family: "Raleway", 'sans-serif';
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    --primary: rgb(20, 238, 31);
+    --primaryShade: hsl(0, 0%, 100%);
+    --secondaryShade: hsl(200, 20%, 97%);
+    --tertiaryShade: hsl(240, 18%, 20%);
+    --quaternaryShade: hsl(230, 20%, 22%);
+    background: rgba(20, 238, 31, 0);
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+
+/* Slides */
+
+.slidesParent {
+    pointer-events: none;
+    overflow-x: hidden;
+    color: white;
+}
+
+.slideParent {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    transition: color 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slidesParent::-webkit-scrollbar {
+    width: 0;
+}
+
+.slideHeader {
+    font-size: 50px;
+    font-weight: 800;
+    margin: 20px 0;
+    line-height: 100%;
+    text-align: center;
+}
+
+.slideText {
+    font-size: 20px;
+    font-weight: bold;
+    max-width: 80%;
+}
+
+.slideListParent {
+    font-size: 20px;
+    font-weight: bold;
+    max-width: 50%;
+    gap: 10px;
+    padding: 10px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.slideListBG {
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.6) 0 0 20px 0, rgba(0, 0, 0, 0.5) 0 0 200px 0;
+}
+
+.slideImage {
+    margin: 40px;
+    max-height: 50vh;
+    height: 80%;
+    max-width: 90%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 0 80px 0;
+}
+
+.rowParent {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.betweenSlide {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 100%;
+    background: var(--primary);
+}
+
+.betweenSlide h2 {
+    font-size: 80px;
+}
