@@ -35,7 +35,7 @@ function parallax() {
 
         if (!item.dataset.speedMultiplier) {
 
-            item.dataset.speedMultiplier = "-1.5"
+            item.dataset.speedMultiplier = "-2"
         }
 
         item.style.backgroundPosition = 'center'

@@ -91,6 +91,7 @@ body::-webkit-scrollbar {
     object-fit: cover;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.4) 0 0 80px 0;
+    min-width: 70%;
 }
 
 .rowParent {
